@@ -11,5 +11,4 @@ allure-results
 .classpath
 .project
 cucumber-automation.iml
-*.exe
 automation-java-selenium-restassured.iml

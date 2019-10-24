@@ -13,7 +13,7 @@ import static com.utilities.methods.SelectElementByType.getElementByType;
 public class ProfilePageLocators {
     @FindBy(className = "profile-name")
     public WebElement profileName;
-    @FindBy(css = "[data-testid='royal_login_button']")
+    @FindBy(css = ".review-action svg:nth-child(1) path[stroke='#4ae0e1'")
     public WebElement firstStar;
     @FindBy(css = ".review-action svg:nth-child(2) path[stroke='#4ae0e1'")
     public WebElement secondStar;

@@ -1,6 +1,7 @@
 package com.utilities.methods;
 
 import static com.utilities.environment.DriverType.CHROME;
+import static com.utilities.environment.DriverType.FIREFOX;
 
 import com.utilities.environment.BaseTest;
 import com.utilities.environment.DriverManager;

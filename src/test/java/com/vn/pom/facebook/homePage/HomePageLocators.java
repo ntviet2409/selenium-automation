@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class HomePageLocators {
-    @FindBy(css = "textarea[name*='message']")
+    @FindBy(xpath = "(//*[@data-testid='status-attachment-mentions-input' or contains(@name,'_message')])[1]")
     public WebElement statusTextBox;
 
     @FindBy(css = "[data-testid='react-composer-post-button']")

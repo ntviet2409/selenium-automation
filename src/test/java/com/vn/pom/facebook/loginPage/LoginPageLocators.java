@@ -11,7 +11,7 @@ public class LoginPageLocators {
     public WebElement emailTextBox;
     @FindBy(name = "pass")
     public WebElement passwordTextBox;
-    @FindBy(css = "[data-testid='royal_login_button']")
+    @FindBy(xpath = "//*[@data-testid='royal_login_button' or @name='login' or @type='submit']")
     public WebElement loginButton;
 
     @Autowired

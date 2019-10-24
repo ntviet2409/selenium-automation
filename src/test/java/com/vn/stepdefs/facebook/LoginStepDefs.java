@@ -2,7 +2,6 @@ package com.vn.stepdefs.facebook;
 
 import com.utilities.methods.BrowserUtils;
 import com.vn.pom.facebook.loginPage.LoginPageHelper;
-import com.vn.utils.ScumberException;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -30,7 +29,7 @@ public class LoginStepDefs {
 
     @Given("^User navigates to url: \"([^\"]*)\"$")
     public void navigateAdminUI(final String url) {
-        driver.get(url);
+        driver.navigate().to(url);
     }
 
     @Given("^Login page is loaded$")

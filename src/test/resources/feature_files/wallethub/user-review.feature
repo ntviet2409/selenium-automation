@@ -3,7 +3,7 @@ Feature: Review rating
 
   Background:
     When User navigates to WalletHub url: "https://wallethub.com/join/login"
-    And User signs in WalletHub with user email: "<wh_username>" and password: "<wh_password>"
+    And User signs in WalletHub with user email: "user_email" and password: "user_password"
     Then Profile name is displayed
 
   Scenario: User is able to review rating on WalletHub - [TC02]
@@ -18,5 +18,5 @@ Feature: Review rating
     And User clicks on the link “Write a review” to write some random text at minimum of "200" characters
     And Press submit button
     Then User should see a confirmation screen saying you have reviewed the institution
-    When User navigates to WalletHub url: "https://wallethub.com/profile/<wh_username>"
+    When User navigates to WalletHub url: "https://wallethub.com/profile/<user_profile_name>"
     Then Profile name is displayed
