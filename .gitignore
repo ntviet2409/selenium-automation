@@ -1,0 +1,15 @@
+.idea/
+target/
+logs/
+bin/
+output/
+.DS_Store
+allure-results
+.alllure
+.vscode/
+.settings/
+.classpath
+.project
+cucumber-automation.iml
+*.exe
+automation-java-selenium-restassured.iml
