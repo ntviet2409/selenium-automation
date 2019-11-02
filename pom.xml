@@ -12,54 +12,6 @@
         <name>vietnguyen</name>
     </organization>
 
-    <profiles>
-        <profile>
-            <id>local</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <build.profile.id>local</build.profile.id>
-                <skip.unit.tests>false</skip.unit.tests>
-            </properties>
-        </profile>
-        <profile>
-            <id>full-test</id>
-            <properties>
-                <build.profile.id>full-test</build.profile.id>
-                <skip.unit.tests>false</skip.unit.tests>
-            </properties>
-        </profile>
-        <profile>
-            <id>qa00</id>
-            <properties>
-                <build.profile.id>qa00</build.profile.id>
-                <skip.unit.tests>false</skip.unit.tests>
-            </properties>
-        </profile>
-        <profile>
-            <id>qa01</id>
-            <properties>
-                <build.profile.id>qa01</build.profile.id>
-                <skip.unit.tests>false</skip.unit.tests>
-            </properties>
-        </profile>
-        <profile>
-            <id>production</id>
-            <properties>
-                <build.profile.id>production</build.profile.id>
-                <skip.unit.tests>false</skip.unit.tests>
-            </properties>
-        </profile>
-        <profile>
-            <id>stage</id>
-            <properties>
-                <build.profile.id>stage</build.profile.id>
-                <skip.unit.tests>false</skip.unit.tests>
-            </properties>
-        </profile>
-    </profiles>
-
     <properties>
         <!-- Properties section -->
         <aspectj.version>1.8.10</aspectj.version>
@@ -75,7 +27,7 @@
         <allure-maven>2.8</allure-maven>
         <allure.reportVersion>2.3.1</allure.reportVersion>
         <org.apache.commons.version>3.4</org.apache.commons.version>
-        <spring.version>4.2.4.RELEASE</spring.version>
+        <spring.version>4.3.18</spring.version>
         <jdk.version>1.8</jdk.version>
     </properties>
 
@@ -159,7 +111,7 @@
         <filters>
             <!-- Ensures that the config.properties file is always loaded from the
                 configuration directory of the active Maven profile. -->
-            <filter>profiles/${build.profile.id}.properties</filter>
+            <filter>profiles/local.properties</filter>
         </filters>
         <!-- Placeholders that are found from the files located in the configured
 			resource directories are replaced with the property values found from the
@@ -202,7 +154,7 @@
                             </goals>
                             <configuration>
                                 <files>
-                                    <file>profiles/${build.profile.id}.properties</file>
+                                    <file>profiles/local.properties</file>
                                 </files>
                             </configuration>
                         </execution>
