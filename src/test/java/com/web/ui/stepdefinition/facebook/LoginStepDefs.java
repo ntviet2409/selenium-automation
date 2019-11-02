@@ -3,7 +3,6 @@ package com.web.ui.stepdefinition.facebook;
 import com.utilities.webdriver.InitDriver;
 import com.web.ui.pom.facebook.loginpage.LoginPageHelpers;
 import cucumber.api.Scenario;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
@@ -17,12 +16,8 @@ public class LoginStepDefs {
     private WebDriver driver;
     private LoginPageHelpers loginPage;
 
-    public LoginStepDefs() {
+    public LoginStepDefs(final Scenario scenario) {
         LOGGER.info("Constructor: LoginStepDefs");
-    }
-
-    @Before
-    public void before(final Scenario scenario) {
         driver = InitDriver.getInstance().getDriver();
         loginPage = PageFactory.initElements(driver, LoginPageHelpers.class);
     }

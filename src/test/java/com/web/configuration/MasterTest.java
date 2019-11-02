@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         "json:target/cucumber/cucumber-json-report.json"},
         monochrome = true,
         features = {"classpath:featurefiles/"},
-        glue = {"com.web.ui.stepdefinition"})
+        glue = {"com.web.ui.stepdefinition", "com.web.api.stepdefinition"})
 
 @RunWith(Cucumber.class)
 public class MasterTest {
