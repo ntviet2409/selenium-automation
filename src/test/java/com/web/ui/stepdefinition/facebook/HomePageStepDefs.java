@@ -19,10 +19,6 @@ public class HomePageStepDefs {
 
     public HomePageStepDefs() {
         Log.info("Constructor: HomePageStepDefs");
-    }
-
-    @Before
-    public void before(final Scenario scenario) throws ScumberException {
         driver = InitDriver.getInstance().getDriver();
         homePage = PageFactory.initElements(driver, HomePageHelpers.class);
     }
