@@ -1,4 +1,4 @@
-package com.web.api.constants;
+package com.web.constants;
 
 import lombok.experimental.UtilityClass;
 
