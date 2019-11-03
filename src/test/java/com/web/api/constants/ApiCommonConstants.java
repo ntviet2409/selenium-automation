@@ -4,7 +4,10 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 public final class ApiCommonConstants {
     public static final String KEY = "key";
+    public static final String ID = "id";
+    public static final String NAME = "name";
     public static final String TOKEN = "token";
+    public static final String SHORT_URL = "shortUrl";
     public static final String PRODUCTION = "prod";
 
     public static final String NON_EXISTING_TOKEN = "non-existing" + RandomStringUtils.random(10);
